@@ -75,7 +75,43 @@ interface ANIMATION_OBJS {
 | createPercentAnim     | css1 : `React.CSSProperties`, css2 : `React.CSSProperties` | `ANIMATION_OBJ_CSS[]` | Create a `from` `to` animation out of 2 CSS states |
 | createPercentAnim | perc : `({ keyframe: Range_0_100 } \| React.CSSProperties)[]` | `ANIMATION_OBJ_CSS[]` | Create an animation from defined keyframes |
 
-<img style="float:left" src="https://miro.medium.com/max/256/1*XgMpgjwwDrHLOiS748kpBg.png" width="35px" height="35px"/>
+<img style="float:right" src="https://miro.medium.com/max/256/1*XgMpgjwwDrHLOiS748kpBg.png" width="35px" height="35px"/>
+
+### How to use
+
+Use existing templates :
+
+![animations autocomplete](https://github.com/Generalizers/react-ui-ox-anim/blob/master/readme/animationsAutocomplete.png?raw=true)
+
+Create your own animation object :
+
+```typescript
+const myAnimationObj: ANIMATION_OBJ = {
+  keyframes: [
+    {
+      keyframe: 0,
+      transform: 'scale(120%)'
+    },
+    {
+      keyframe: 44,
+      transform: 'scale(100%)'
+    },
+    {
+      keyframe: 100,
+      transform: 'scale(120%)'
+    }
+  ]
+};
+```
+
+```TSX
+<Animation animations={myAnimationObj}>Animate me</Animation>
+```
+
+Result :
+
+<img src="https://github.com/Generalizers/react-ui-ox-anim/blob/master/readme/growAnim.gif?raw=true" alt="animations autocomplete" width="200px"/>
+
 
 ## Transition
 
