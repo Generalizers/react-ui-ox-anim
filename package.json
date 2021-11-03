@@ -1,0 +1,71 @@
+{
+  "name": "react-ui-ox-anim",
+  "version": "1.0.0",
+  "description": "An animation package for react-ui-ox and the community",
+  "scripts": {
+    "start": "webpack serve --config ./webpack.dev.js",
+    "lib": "webpack --config ./webpack.lib.js",
+    "lib:publish": "npm run lib && npm publish",
+    "publish:patch": "yarn version --patch --no-git-tag-version && npm run git:lib:publish",
+    "publish:major": "yarn version --major --no-git-tag-version && npm run git:lib:publish",
+    "publish:minor": "yarn version --minor --no-git-tag-version && npm run git:lib:publish"
+  },
+  "author": {
+    "name": "Alan Blanchet",
+    "email": "contact@alan-blanchet.fr",
+    "url": "https://alan-blanchet.fr"
+  },
+  "type": "commonjs",
+  "main": "./src/module.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Generalizers/react-ui-ox-anim.git"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "ox",
+    "animation",
+    "anim"
+  ],
+  "module": "./lib/module.js",
+  "types": "./lib/module.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Generalizers/react-ui-ox-anim#readme",
+  "devDependencies": {
+    "typescript": "4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^4.1.0",
+    "webpack-merge": "^5.8.0",
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/plugin-transform-typescript": "^7.13.0",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jquery": "^3.5.5",
+    "@types/jqueryui": "^1.12.15",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-redux": "^7.1.16",
+    "@types/styled-components": "^5.1.9",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "html-webpack-plugin": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "styled-components": "^5.3.0",
+    "ts-loader": "^9.2.5",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "jquery": "^3.6.0",
+    "jqueryui": "^1.11.1"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": true,
+    "lib": [
+      // "es2015",
+      // "dom.iterable",
+      // "es2016.array.include",
+      // "es2017.object",
+      "DOM",
+      "ESNext"
+    ],
+    "jsx": "react-jsx",
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "lib",
+    "baseUrl": "."
+  },
+  "include": ["src/components/**/*", "src/**/*.ts"],
+  "exclude": ["node_modules", "lib"]
+}

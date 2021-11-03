@@ -1,0 +1,11 @@
+# Never
+node_modules/*
+
+# Package.json generated file
+package-lock.json
+
+# Don't include the built lib
+lib/*
+
+# When we npm pack
+*.tgz
